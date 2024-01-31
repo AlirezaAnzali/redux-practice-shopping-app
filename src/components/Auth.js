@@ -8,6 +8,7 @@ const Auth = () => {
   const dispatch = useDispatch();
   const handleSubmit = (event) => {
     event.preventDefault();
+    // no need to entry id and password just for demo
     dispatch(authActions.login());
   }
   return (

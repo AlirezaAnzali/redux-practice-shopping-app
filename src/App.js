@@ -6,6 +6,8 @@ import { useSelector } from "react-redux";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const cartItems = useSelector((state) => state.cart.items);
+  console.log(cartItems);
   return (
     <div className="App">
       {!isLoggedIn && <Auth />}
